@@ -1,0 +1,5 @@
+# edit/simplify Trinity contig headers:
+
+cat 'Trinity.fasta' | awk -F\  '{print $1}' > 'Trinity.clean_headers.fasta'
+
+
