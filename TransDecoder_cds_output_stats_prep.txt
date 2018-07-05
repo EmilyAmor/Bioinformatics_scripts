@@ -1,6 +1,6 @@
 #################################################################
 # BASH commands to prep .cds file (from Transdecoder) for stats #
-################################################################
+#################################################################
 
 # Extract only the header names from all predicted ORFs (.cds):
 
