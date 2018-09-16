@@ -87,7 +87,7 @@ def kraken_classification(kraken_tsv, new_file_name):
 
     df = pd.read_table(kraken_tsv,sep='\t', index_col='transcript')
     new_table = df.replace(to_replace=rep_dict)
-    new_table.to_csv(new_file_name)
+    new_table.to_csv(new_file_name, sep='\t')
 
 if __name__ == '__main__':
     kraken_classification()
