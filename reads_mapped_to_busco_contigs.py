@@ -17,7 +17,7 @@ def mapped_reads_to_busco_contigs(contigs_hit_busco, bowtie_stats ):
 
     # read in mapped_reads_to_contig.tsv file from bowtie2 .sam output
     reads_that_map = pd.read_csv(bowtie_stats, sep='\t', header=0)
-    mapped_reads_dict = dict(zip(reads_that_map['transcripts'], reads_that_map['mapped_reads']))
+    mapped_reads_dict = dict(zip(reads_that_map['contigs'], reads_that_map['mapped_reads']))
 
     new_dict = {}
     for transcript in busco_transcripts:
