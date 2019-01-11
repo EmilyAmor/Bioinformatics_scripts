@@ -3,11 +3,8 @@
 import click
 import pandas as pd
 import numpy as np
+import sys
 
-@click.command()
-@click.argument('brite_file')
-@click.argument('letter')
-@click.argument('output')
 
 def brite_parse(brite_file, letter, output_tsv):
     dict_count = {}
@@ -26,3 +23,9 @@ def brite_parse(brite_file, letter, output_tsv):
 
     df = pd.DataFrame.from_dict(dict_count, orient='index')
     df.to_csv(output_tsv, sep='\t')
+
+if __name__ == '__main__':
+    brite_file = sys.argv[1]
+    letter = sys.argv[2]
+    output_tsv =sys.argv[3]
+    brite_parse(brite_file, letter, output_tsv)
