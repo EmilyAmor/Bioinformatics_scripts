@@ -2,4 +2,8 @@
 
 cat 'Trinity.fasta' | awk -F\  '{print $1}' > 'Trinity.clean_headers.fasta'
 
+# convert ANGEL protein output to original transcript sequences (i.e. 26_2_14716|m.14697 to 26_2_14716):
+
+awk '{ gsub("\|m.*", "", $1); print }'
+
 
