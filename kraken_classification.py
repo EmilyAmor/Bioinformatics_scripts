@@ -23,8 +23,12 @@ def kraken_classification(kraken_tsv, new_file_name):
     27_2_73	    P
     27_2_421	U
 """
-    rep_dict = dict([
+    rep_dict = dict([('Thermodesulfobium narugense DSM 14796 (taxid 747365)', "B"), 
+    ('Advenella mimigardefordensis DPN7 (taxid 1247726)', 'B'),
+    ('Anaerostipes hadrus (taxid 649756)', 'B'),
+    ('commelinids (taxid 4734)', 'P'),
     ('50 kb inversion clade (taxid 2231393)', 'P'),
+    ('cellular organisms (taxid 131567)', 'U'),
     ('Cajanus cajan (taxid 3821)', 'P'), ('Brassica (taxid 3705)', 'P'),
     ('Brassica napus (taxid 3708)', 'P'), ('Brassica oleracea var. oleracea (taxid 109376)','P'),
     ('Brassica rapa (taxid 3711)', 'P'), ('Cajanus cajan (taxid 3821)', 'P'),
